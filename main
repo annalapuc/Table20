@@ -1,0 +1,100 @@
+import java.util.Random;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        System.out.println("Program tworzy tablicę z 20 elementami");
+        Random rand=new Random();
+
+        int []table=new int[20];
+        System.out.print("Wylosowane liczby: ");
+        for(int i=0;i<20;i++)
+        {
+            table[i]=rand.nextInt(10)+1;
+            System.out.print(table[i]+" ");
+        }
+        // sprobowac zapisac w tablicy
+        int counter1=0;
+        int counter2=0;
+        int counter3=0;
+        int counter4=0;
+        int counter5=0;
+        int counter6=0;
+        int counter7=0;
+        int counter8=0;
+        int counter9=0;
+        int counter11=0;
+        for(int i=0; i<20; i++)
+        {
+            if(table[i]==1)
+            {
+                counter1++;
+                i++;
+            }
+
+            if(table[i]==2)
+            {
+                counter2++;
+                i++;
+            }
+
+            if(table[i]==3)
+            {
+                counter3++;
+                i++;
+            }
+            if(table[i]==4)
+            {
+                counter4++;
+                i++;
+            }
+
+            if(table[i]==5)
+            {
+                counter5++;
+                i++;
+            }
+
+            if(table[i]==6)
+            {
+                counter6++;
+                i++;
+            }
+            if(table[i]==7)
+            {
+                counter7++;
+                i++;
+            }
+
+            if(table[i]==8)
+            {
+                counter8++;
+                i++;
+            }
+
+            if(table[i]==9)
+            {
+                counter9++;
+                i++;
+            }
+            if(table[i]==10)
+            {
+                counter11++;
+                i++;
+            }
+            }
+        System.out.println();
+        System.out.println(counter1+" x 1");
+        System.out.println(counter2+" x 2");
+        System.out.println(counter3+" x 3");
+        System.out.println(counter4+" x 4");
+        System.out.println(counter5+" x 5");
+        System.out.println(counter6+" x 6");
+        System.out.println(counter7+" x 7");
+        System.out.println(counter8+" x 8");
+        System.out.println(counter9+" x 9");
+        System.out.println(counter11+" x 10");
+    }
+    }
+
